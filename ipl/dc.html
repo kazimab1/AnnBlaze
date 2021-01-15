@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Responsive Sticky Navbar</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <script type="text/javascript">
+      $(window).on('src')
+      </script>
+</head>
+<body>
+      <div class="wrapper">
+            <header>
+
+                  <nav>
+
+                        <div class="menu-icon">
+                              <i class="fa fa-bars fa-2x"></i>
+                        </div>
+
+                        <div class="logo">
+                             <FONT SIZE=6> Delhi Capitals
+                        </div>
+
+                        <div class="menu">
+                              <ul>
+                                    <li></li>
+                                    <li><a href="dc\Player List dc.html">Player List</a></li>
+                                    <li><a href="dc\scheduled dc.html">Scheduled</a></li>
+                                    <li><a href="dc\socialmedia dc.html">Social Media</a></li>
+                              </ul>
+                        </div>
+                  </nav>
+
+            </header>
+
+            <div class="content">
+                  <p><FONT SIZE=4>
+                        The Delhi Capitals are a franchise cricket team that represents the city of Delhi in the Indian Premier League (IPL). Founded in 2008 as Delhi Daredevils (DD), the franchise is owned by the GMR Group and JSW Group. The team's home ground is Feroz Shah Kotla Ground which is in New Delhi.
+Ahead of the 2018 IPL, 50% of the franchise ownership was transferred to the JSW Group. In December 2018, the team changed its name from the Delhi Daredevils to the Delhi Capitals.
+ Giving the rationale behind the change of the team's name, Co-Owner and Chairman Parth Jindal said, "Delhi is the power centre of the country, it is the capital, therefore the name Delhi Capitals."Co-Owner Kiran Kumar Grandhi said, "The new name symbolizes Delhi's identity and just like the city, we are aiming to be the centre of all action going forward."
+The Delhi Capitals have never appeared in an Indian Premier League final, and last qualified for the IPL playoffs in 2012. The leading run-scorer for the Capitals is Virender Sehwag, while the leading wicket-taker is Amit Mishra.
+
+
+                  </p>
+                 
+            </div>
+      </div>
+
+      <script type="text/javascript">
+
+      // Menu-toggle button
+
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+
+
+      </script>
+
+</body>
+</html>

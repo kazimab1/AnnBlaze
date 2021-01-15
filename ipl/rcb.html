@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Responsive Sticky Navbar</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <script type="text/javascript">
+      $(window).on('src')
+      </script>
+</head>
+<body>
+      <div class="wrapper">
+            <header>
+
+                  <nav>
+
+                        <div class="menu-icon">
+                              <i class="fa fa-bars fa-2x"></i>
+                        </div>
+
+                        <div class="logo">
+                             <FONT SIZE=6 COLOR="Yellow"> Royal Challengers Bangalore
+                        </div>
+
+                        <div class="menu">
+                              <ul>
+                                    <li></li>
+                                    <li><a href="rcb\Player List rcb.html">Player List</a></li>
+                                    <li><a href="rcb\scheduled rcb.html">Scheduled</a></li>
+                                    <li><a href="rcb\socialmedia rcb.html">Social Media</a></li>
+                              </ul>
+                        </div>
+                  </nav>
+
+            </header>
+
+            <div class="content">
+                  <p><FONT SIZE=4 COLOR="Black">
+                       The Royal Challengers Bangalore(often abbreviated as RCB) are a franchise cricket team based in Bangalore, Karnataka, that plays in the Indian Premier League (IPL). One of the original eight teams in the IPL, the team has made three final appearances in the IPL, losing all (in 2009 to the Deccan Chargers, in 2011 to the Chennai Super Kings and in 2016 to the Sunrisers Hyderabad). The team also finished runners-up in the 2011 CLT20, losing the final against the Mumbai Indians.
+</p>
+<p>
+The home ground of the Royal Challengers is the M. Chinnaswamy Stadium in Bangalore.The team is currently captained by Virat Kohli and coached by Gary Kirsten .The team holds the records of both the highest and the lowest total in the IPL (263/5 and 49).
+
+
+                  </p>
+                 
+            </div>
+      </div>
+
+      <script type="text/javascript">
+
+      // Menu-toggle button
+
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+
+
+      </script>
+
+</body>
+</html>
