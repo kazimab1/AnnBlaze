@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Responsive Sticky Navbar</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <script type="text/javascript">
+      $(window).on('src')
+      </script>
+</head>
+<body>
+      <div class="wrapper">
+            <header>
+
+                  <nav>
+
+                        <div class="menu-icon">
+                              <i class="fa fa-bars fa-2x"></i>
+                        </div>
+
+                        <div class="logo">
+                             <FONT SIZE=6> Rajasthan Royals
+                        </div>
+
+                        <div class="menu">
+                              <ul>
+                                    <li></li>
+                                    <li><a href="rr\Player List rr.html">Player List</a></li>
+                                    <li><a href="rr\scheduled rr.html">Scheduled</a></li>
+                                    <li><a href="rr\socialmedia rr.html">Social Media</a></li>
+                              </ul>
+                        </div>
+                  </nav>
+
+            </header>
+
+            <div class="content">
+                  <p><FONT SIZE=4>
+                       The Rajasthan Royals (often abbreviated as RR) are a cricket team in the Indian Premier League from the city of Jaipur (also known Pink City).
+Founded in 2008 as one of the initial eight IPL franchises, the Royals are owned by Manoj Badale. The team played its home matches at the Sawai Mansingh Stadium in Jaipur.The Royals are sometimes considered the "moneyball" team of the IPL.
+The Royals are known to unearth obscure, high potential talent,as well as the involvement in a number of controversies and scandals.
+</p>
+<p>
+The team won the inaugural edition of the IPL under the captaincy of Shane Warne, despite being written off as a title contender by the media and fans. The Royals were also the runners-up of the 2013 Champions League Twenty20 under Rahul Dravid's captaincy.
+On 14 July 2015 the verdict reached by a panel appointed by India's Supreme Court suspended Rajasthan Royals and Chennai Super Kings for two years over a corruption and match fixing scandal, meaning they could not participate in both the 2016 and 2017 IPL tournaments. They returned to the competition for the 2018 season.
+The team's record run-scorer and current captain is Ajinkya Rahane, with 2705 runs,[13] while the leading wicket-taker is Shane Watson, with 67.
+
+
+                  </p>
+                 
+            </div>
+      </div>
+
+      <script type="text/javascript">
+
+      // Menu-toggle button
+
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+
+
+      </script>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Responsive Sticky Navbar</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <script type="text/javascript">
+      $(window).on('src')
+      </script>
+</head>
+<body>
+      <div class="wrapper">
+            <header>
+
+                  <nav>
+
+                        <div class="menu-icon">
+                              <i class="fa fa-bars fa-2x"></i>
+                        </div>
+
+                        <div class="logo">
+                             <FONT SIZE=6> Kolkata Knight Riders
+                        </div>
+
+                        <div class="menu">
+                              <ul>
+                                    <li></li>
+                                    <li><a href="kkr\Player List kkr.html">Player List</a></li>
+                                    <li><a href="kkr\scheduled kkr.html">Scheduled</a></li>
+                                    <li><a href="kkr\socialmedia kkr.html">Social Media</a></li>
+                              </ul>
+                        </div>
+                  </nav>
+
+            </header>
+
+            <div class="content">
+                  <p><FONT SIZE=4>
+                       The Kolkata Knight Riders (also known by the acronym KKR) are a franchise cricket team representing the city of Kolkata in the Indian Premier League. The franchise is owned by Bollywood actor Shahrukh Khan, actress Juhi Chawla and her spouse Jay Mehta. The team is coached by Jacques Kallis. The home of the Knight Riders is Eden Gardens, the largest cricket stadium in India and the second largest in the world by seating capacity.
+Although the team has gained immense popularity due to its association with celebrity owners, it was surrounded with controversy and poor on-field performance through the first three years of the tournament.The team's performance, however, improved from the fourth season as it qualified for the IPL playoffs as well as the now defunct Champions League Twenty20. They eventually became the IPL champions for the first time in 2012, by defeating Chennai Super Kings in the final and repeated the feat in 2014, defeating Kings XI Punjab.
+The Knight Riders hold the record for the longest winning streak by any Indian team in T20s (14).
+</p>
+<p>
+The leading run-scorer of the side is Gautam Gambhir, while the leading wicket-taker is Sunil Narine. The official theme of the team is Korbo, Lorbo, Jeetbo Re (we will perform, fight and win!) and the official colours are purple and gold. The brand value of the Knight Riders was estimated at $99 million in 2017, second highest among IPL franchises.
+
+
+                  </p>
+                 
+            </div>
+      </div>
+
+      <script type="text/javascript">
+
+      // Menu-toggle button
+
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+
+
+      </script>
+
+</body>
+</html>
